@@ -9,13 +9,15 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stats.c 
+ * @brief Implementation file for statistics
  *
- * <Add Extended Description Here>
+ * Analyze an array of unsigned char data items and report analytics on the maximum, minimum, mean, and median of the data set.
+ * In addition, reorder this data set from large to small. All statistics are rounded down to the nearest integer. 
+ * After analysis and sorting is done, data is printed to the screen in nicely formatted presentation.
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author Rakesh Singha
+ * @date 8-Oct-2022
  *
  */
 
@@ -36,8 +38,42 @@ void main() {
                                 7,  87, 250, 230,  99,   3, 100,  90};
 
   /* Other Variable Declarations Go Here */
-  /* Statistics and Printing Functions Go Here */
+  unsigned int length = SIZE;
 
+  /* Statistics and Printing Functions Go Here */
+  print_array(test, length);
+  print_statistics(test, length);
+  sort_array(test, length);
+  print_array(test, length);
+  return;
 }
 
 /* Add other Implementation File Code Here */
+void print_statistics(unsigned char *arr, unsigned int len){
+
+}
+
+void print_array(unsigned char *arr, unsigned int len){
+
+}
+
+int find_median(unsigned char *arr, unsigned int len){
+
+}
+
+int find_mean(unsigned char *arr, unsigned int len){
+
+}
+
+int find_maximum(unsigned char *arr, unsigned int len){
+
+}
+
+int find_minimum(unsigned char *arr, unsigned int len){
+
+}
+
+void sort_array(unsigned char *arr, unsigned int len){
+
+}
+
